@@ -1,10 +1,15 @@
 package au.com.telstra.simcardactivator.dto;
 
 public class SimActivationRequest {
-    private String iccid;
-    private String email;
+    private String icCid;
+    private String customerEmail;
 
-    public String getIccid() {
-        return iccid;
-    }
+    public String getIcCid() { return icCid; }
+
+    public void setIcCid(String icCid) { this.icCid = icCid; }
+
+    public String getCustomerEmail() { return customerEmail; }
+
+    public void setCustomerEmail(String customerEmail) { this.customerEmail = customerEmail; }
 }
+
