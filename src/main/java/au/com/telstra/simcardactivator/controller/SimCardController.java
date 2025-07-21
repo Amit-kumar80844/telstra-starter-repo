@@ -48,7 +48,7 @@ public class SimCardController {
                     .body("Error activating SIM card: " + e.getMessage());
         }
 
-        // Save to database
+        // Save to DataBase
         SimCardRecord record = new SimCardRecord(
                 request.getIcCid(),
                 request.getCustomerEmail(),
