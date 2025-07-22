@@ -8,10 +8,8 @@ import io.cucumber.spring.CucumberContextConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.*;
 import org.springframework.test.context.ContextConfiguration;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 @CucumberContextConfiguration
@@ -22,8 +20,7 @@ public class SimCardActivatorStepDefinitions {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    @LocalServerPort
-    private int port;
+    private final int port = 8080;
 
     private String iccid;
     private String customerEmail;
